@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+  <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Carro/Veículo</title>
+
+    <script sr="https://cdn.rawgit.com/SlexAxton/messageformat.js/v1.0.2/messageformat.js"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script> 
+
+	 <!-- CSS  -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	
+	<script src="js/getCordenadas.js"></script>
+	<script src="script.js"></script>
+
+  <style>
+  body {  
+  background: #fffff0;
+  padding: 10px;
+}
+
+canvas {
+  border: 2px dotted red;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 180vh;
+  width: 80vw;
+}
+
+</style>  
+  
+  </head>
+  <body>
+
+
+<div class="chartjs-wrapper">
+
+  <div class="chart-container1  chart-container" >
+ 
+<canvas id="chartjs-0" class="chartjs" width="undefined" height="undefined"></canvas>
+<div>
+ 
+
+<script>
+var ano = "2017"
+new Chart(document.getElementById("chartjs-0")
+,{"type":"line"
+  ,"data":{"labels":["Jan","Feb","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
+           "datasets":[{"label":"Luz 	" +ano,
+		          "data":[65.00,59.00,80.90,81.89,56.01,55.88,140.99],
+				      "fill":false,"borderColor":"rgb(75, 192, 192)","lineTension":0.1}]
+					  },
+					  "options":{}
+});
+				  
+</script></div></p>
+
+</body>
+
+  </body>
+</html>
